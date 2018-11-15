@@ -1,0 +1,53 @@
+# -*- coding:utf-8 -*-
+from selenium import webdriver
+from bs4 import BeautifulSoup
+import time
+import requests
+from requests.compat import urljoin
+import re
+from urllib.request import urlopen
+import sys
+
+#저장 파일 열기
+f=open("C:/Users/커뮤니케이션실/Desktop/coinpan.txt", 'w', encoding='UTF8')
+
+#드라이버 작동
+driver = webdriver.Chrome('C:/Users/커뮤니케이션실/Downloads/chromedriver/chromedriver.exe')
+driver.implicitly_wait(3)
+
+#자유게시판 로그인
+driver.get('https://coinpan.com/free')
+driver.find_element_by_name('user_id').send_keys('okgo99')
+driver.find_element_by_name('password').send_keys('asdf1234')
+driver.find_element_by_xpath('//span[@class="loginbutton"]/input').click()
+
+
+#글 누르기
+art_list=[]
+i=1
+follow_loop = range(6, 25)
+cnt=1
+while i < 123:
+
+    for x in follow_loop:
+        xpath = '//*[@id="board_list"]/table/tbody/tr['
+        xpath += str(x)
+        xpath += ']/td[2]/a'
+
+        driver.find_element_by_xpath(xpath).click()
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        for soup in soup.find_all("h1")+soup.find_all("div", "xe_content"):
+
+        #for soup in soup.find_all("div", "xe_content"):
+            #print ("NO.", cnt,:"i "본문f cnt%2==0 else "제목:",  soup.text)
+            print("NO.",cnt, soup.text)
+            art_list.append(soup.text)
+            cnt+=1
+    driver.find_element_by_link_text(str(i)).click()
+    i+=1
+
+with open("C:/Users/커뮤니케이션실/Desktop/coinpan2.txt", 'w', encoding='UTF8') as f :
+    for atc in art_list:
+        f.write(str(atc) +'\n')
+#f.write(art_list)
+f.close()
