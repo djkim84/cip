@@ -22,51 +22,19 @@ driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[1]/div/div/div/fo
 driver.find_element_by_name('is_keyword').send_keys('거래소')
 driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/form/input[6]').click()
 
+#시작 페이지 지점 찾기
+page_num=0
+while page numb < 100 : 
+    driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+    page_num += 1
 
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
-driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
 
+#시작 페이지 찾기
 artcl_numb=1
 
 soup = BeautifulSoup(driver.page_source, "html.parser")
 atc_list=[]
-i=381
+i=381 
 cnt=1
 while i < 1010:
     soup = BeautifulSoup(driver.page_source, "html.parser")
