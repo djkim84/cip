@@ -1,0 +1,86 @@
+from selenium import webdriver
+from bs4 import BeautifulSoup
+import time
+import requests
+from requests.compat import urljoin
+import re
+from urllib.request import urlopen
+
+
+
+#드라이버 작동
+driver = webdriver.Chrome('C:/Users/커뮤니케이션실/Downloads/chromedriver/chromedriver.exe')
+driver.implicitly_wait(3)
+
+#사이트 로그인
+driver.get('https://coinpan.com')
+driver.find_element_by_name('user_id').send_keys('okgo99')
+driver.find_element_by_name('password').send_keys('asdf1234')
+driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[1]/div/div/div/form/fieldset/div[1]/span[2]/input').click()
+
+#키워드 입력
+driver.find_element_by_name('is_keyword').send_keys('거래소')
+driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/form/input[6]').click()
+
+
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+driver.find_element_by_xpath('/html/body/div[4]/div/div[1]/div/div/div/div[2]/div[11]/a[12]').click()
+
+artcl_numb=1
+
+soup = BeautifulSoup(driver.page_source, "html.parser")
+atc_list=[]
+i=381
+cnt=1
+while i < 1010:
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    soup = soup.find_all("p", "elasticsearch_content")
+    print("글개수 : ",cnt, soup)
+    atc_list.append(soup)
+    driver.find_element_by_link_text(str(i)).click()
+    i+=1
+    cnt+=1
+
+
+#저장 파일 열기
+with open("C:/Users/커뮤니케이션실/Desktop/grs.txt", 'w', encoding='UTF8') as f :
+    for atc in atc_list:
+        f.write(str(atc) +'\n')
+#f.write(art_list)
+f.close()
